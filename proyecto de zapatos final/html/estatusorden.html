@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatus de Orden</title>
+    <link rel="stylesheet" href="../css/estatusorden.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Estatus de Orden</h1>
+    </header>
+    <main class="content">
+        <section class="order-info">
+            <h2>Consulta tu Orden</h2>
+            <p>Introduce tu número de orden y correo electrónico para consultar el estatus de tu pedido.</p>
+            <form action="#" method="POST" class="order-form">
+                <label for="order-number">Número de Orden:</label>
+                <input type="text" id="order-number" name="order-number" placeholder="Ejemplo: 12345" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ejemplo: correo@dominio.com" required>
+                <button type="submit" class="btn-submit">Consultar</button>
+            </form>
+        </section>
+        <section class="order-status">
+            <h2>Estado Actual</h2>
+            <p>El estado de tu orden aparecerá aquí una vez que la consultes.</p>
+            <div class="status-box">
+                <p><strong>Estado:</strong> Procesando</p>
+                <p><strong>Fecha Estimada de Entrega:</strong> 15 de diciembre de 2024</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Calzado Deportivo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

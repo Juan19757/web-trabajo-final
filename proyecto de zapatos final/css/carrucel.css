@@ -1,0 +1,46 @@
+/* Contenedor principal del carrusel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Altura total de la ventana */
+    background-color: #0c0a0a; /* Fondo oscuro para destacar el carrusel */
+    padding: 20px; /* Espaciado alrededor */
+}
+
+/* Estilo del carrusel */
+.carousel {
+    width: 100%; /* Ancho ajustado */
+    max-width: 1200px; /* Ancho máximo */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción estándar de video/imágenes */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde el contenido excedente */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para destacar el carrusel */
+    background: white; /* Fondo blanco */
+}
+
+/* Ajuste de las imágenes dentro del carrusel */
+.carousel-item img {
+    width: 100%; /* Ocupa el ancho completo */
+    height: 100%; /* Ajuste perfecto en altura */
+    object-fit: cover; /* Ajuste proporcional y recorte de las imágenes */
+    object-position: center; /* Centra el contenido de las imágenes */
+}
+
+/* Controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Texto del carrusel (si se utiliza texto) */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white; /* Texto en blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+}

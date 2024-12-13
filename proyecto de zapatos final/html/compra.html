@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de la compra</title>
+    <link rel="stylesheet" href="../css/compra.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmación de la compra</h1>
+        <form id="reservationForm">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">numero de celular:</label>
+            <input type="email" id="numero" name="email" required>
+
+            <label for="phone">correo Electrónico:</label>
+            <input type="tel" id="correo" name="phone" required>
+
+            <label for="phone">direccion:</label>
+            <input type="tel" id="direccion" name="phone" required>
+
+            <label for="phone">cedula:</label>
+            <input type="tel" id="cedula" name="phone" required>
+
+            <label for="guests">Número de zapatillas:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+
+
+            <button type="button" onclick="confirmReservation()">Confirmar Reserva</button>
+        </form>
+
+        <div id="confirmationMessage" class="confirmation" style="display: none;">
+            <p><strong>Reserva confirmada:</strong></p>
+            <p id="confirmationDetails"></p>
+        </div>
+    </div>
+    <script src="../javascript/compra.js"></script>
+</body>
+</html>
