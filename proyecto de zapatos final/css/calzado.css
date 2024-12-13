@@ -1,0 +1,94 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/cancha-tenis.jpg'); /* Ruta de tu imagen de fondo (usando / en lugar de \) */
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo cuando se hace scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body tenga al menos el 100% de la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los productos */
+.shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Se adapta a pantallas más pequeñas */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Tarjetas de productos */
+.shoe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Asegura que la tarjeta se ajuste a la columna */
+    max-width: 250px; /* Limita el ancho máximo de las tarjetas */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen del producto */
+.shoe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Título del producto */
+h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Precio */
+.shoe-price {
+    font-size: 1rem;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+/* Botón de compra */
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Hover del botón */
+.buy-button:hover {
+    background-color: #218838;
+}
+
+/* Efecto hover en tarjeta de producto */
+.shoe-card:hover {
+    transform: scale(1.05);
+}
+
+
